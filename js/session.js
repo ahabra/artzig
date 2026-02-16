@@ -15,6 +15,4 @@ function setIframe(iframeSrc) {
   sessionStorage.setItem('iframeSrc', iframeSrc)
 }
 
-
-
 })();
