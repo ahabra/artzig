@@ -28,14 +28,4 @@ body.artist {
   }
  
 
-
-  .artwork {
-    display: flex;
-    gap: 1rem;
-
-    img {
-      width: 200px;
-      height: auto;
-    }
-  }
 }
