@@ -27,5 +27,9 @@ body.artist {
     padding-left: 3rem;
   }
  
+  a {
+    text-decoration: none;
+    color: darkgreen;
+  }
 
 }
