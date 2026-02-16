@@ -5,6 +5,7 @@ body.artist {
   flex-direction: column;
   gap: 1rem;
   font-size: 1.5rem;
+  padding: 1rem 0 1rem 1rem;
 
   h1 {
     font-size: 2rem;
@@ -64,8 +65,6 @@ body.artist {
     .number {
       text-align: right;
     }
-
-
   }
 
 }

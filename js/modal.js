@@ -63,7 +63,7 @@ function createRow(index, {name, url, size, width, height}) {
 
 
 function detailsModal() {
-  const links = document.querySelectorAll('.details a')
+  const links = document.querySelectorAll('#details a')
   links.forEach(link => {
     const imgSrc = link.href
     const alt = link.innerText
