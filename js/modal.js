@@ -1,10 +1,3 @@
-(function() {
-
-// const public = {
-//   detailsModal
-// }
-// globalThis.app = {...globalThis.app, ...public}
-
 
 function buildHtml(imgSrc, alt) {
   return `	
@@ -61,5 +54,3 @@ function detailsModal() {
 }
 
 detailsModal()
-  
-})();

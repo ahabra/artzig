@@ -1,9 +1,4 @@
-(function() {
-const public = {
-  // toggleSidenav
-}
-
-globalThis.app = {...globalThis.app, ...public}
+import * as session from './js/session.js'
 
 const RESPONSIVE_WIDTH = 600;
 const sidenav = document.querySelector("#sidenav");
@@ -27,7 +22,6 @@ function isMobile() {
   return window.matchMedia(`only screen and (max-width: ${RESPONSIVE_WIDTH}px)`).matches
 }
 
-
 const iframe = document.getElementById('contentFrame')
 
 function showLinksInIframe() {
@@ -36,21 +30,24 @@ function showLinksInIframe() {
     link.onclick = ev => {
       ev.preventDefault()
       iframe.src = link.href
-      app.session.setIframe(link.href)
+      session.setIframe(link.href)
     }
   })
 
 }
 
 function restoreIframe() {
-  const src = app.session.getIframe()
+  const src = session.getIframe()
   if (src) {
     iframe.src = src
   }
 }
 
-showLinksInIframe()
-restoreIframe()
-setHamburgerOnClick()
+function init() {
+  showLinksInIframe()
+  restoreIframe()
+  setHamburgerOnClick()
+}
 
-})();
+init()
+
