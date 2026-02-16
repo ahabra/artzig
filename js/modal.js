@@ -9,7 +9,7 @@ function buildHtml(imgSrc, alt) {
 </div>`
 }
 
-function defineEvents() {
+function defineClosers() {
   const close = ()=> modal.style.display = 'none'
   const closeBtn = document.querySelector('.close') 
   closeBtn.onclick = close
@@ -37,9 +37,30 @@ function showModal(imgSrc, alt='') {
   clearModal()
   const html = buildHtml(imgSrc, alt)
   document.body.insertAdjacentHTML('beforeend', html)
-  defineEvents()
+  defineClosers()
   getModal().style.display = 'block'
 }
+
+function showDetails() {
+  const tbody = document.querySelector('#details tbody')
+  let counter = 1
+  detailsImages.forEach(di=> {
+    const row = createRow(counter++, di)
+    tbody.insertAdjacentHTML('beforeend', row)
+  })
+}
+
+function createRow(index, {name, url, size, width, height}) {
+  return `
+  <tr>
+    <th class="number">${index}</th>
+    <td><a href="details/${url}">${name}</a></td>
+    <td class="number">${size}</td>
+    <td class="number">${width.toLocaleString('en-US')}</td>
+    <td class="number">${height.toLocaleString('en-US')}</td>
+  </tr>`
+}
+
 
 function detailsModal() {
   const links = document.querySelectorAll('.details a')
@@ -53,4 +74,5 @@ function detailsModal() {
   })
 }
 
+showDetails()
 detailsModal()

@@ -39,6 +39,35 @@ body.artist {
     width: 800px;
   }
 
+  #details {
+    width: 1px;
+    white-space: nowrap;
+    border-collapse: collapse;
+
+    thead {
+      th.image {
+        text-align: left;
+      }
+    }
+
+    th {
+      background-color: lightgray;
+      font-weight: 200;
+    }
+
+    td, th {
+      border-bottom: 1px solid gray;
+      padding: 0.5rem 0.6rem;
+
+    }
+
+    .number {
+      text-align: right;
+    }
+
+
+  }
+
 }
 
 @media (max-width: 600px) {

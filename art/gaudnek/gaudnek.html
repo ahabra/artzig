@@ -27,20 +27,34 @@
 		<li>Date: 1960s-1970s</li>
 		<li>Size: height: 29", width: 45", thickness: 1.75".</li>
 	</ul>
-	<h4>Details</h4>
+	<h4>Detail Images</h4>
+
+	<table id="details">
+		<thead>
+			<tr>
+				<th></th>
+				<th class="image">Image</th>
+				<th>Size<br>(MB)</th>
+				<th>Width<br>pixels</th>
+				<th>Height<br>pixels</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
 	<ol class="details">
-		<li><a href="details/01-gaudnek-front.jpg">Full</a></li>
-		<li><a href="details/02-gaudnek-front-left.jpg">Front Left</a></li>
-		<li><a href="details/03-gaudnek-front-right.jpg">Front Right</a></li>
-		<li><a href="details/04-gaudnek-front-signature.jpg">Front Signature</a></li>
-		<li><a href="details/05-gaudnek-frame-top.jpg">Frame Top</a></li>
-		<li><a href="details/06-gaudnek-frame-top-left.jpg">Frame Top Left</a></li>
-		<li><a href="details/07-gaudnek-back.jpg">Back</a></li>
-		<li><a href="details/08-gaudnek-back-top-left.jpg">Back Top Left</a></li>
-		<li><a href="details/09-gaudnek-back-top-title.jpg">Back Top Title</a></li>
-		<li><a href="details/10-gaudnek-back-top-right.jpg">Back Top Right</a></li>
-		<li><a href="details/11-gaudnek-back-bottom-left.jpg">Back Bottom Left</a></li>
-		<li><a href="details/12-gaudnek-back-bottom-right.jpg">Back Bottom Right</a></li>
+		<li><a href="details/01-gaudnek-front.jpg">Full</a> (4.9 MB)</li>
+		<li><a href="details/02-gaudnek-front-left.jpg">Front Left</a> (4.8 MB)</li>
+		<li><a href="details/03-gaudnek-front-right.jpg">Front Right</a> (4.9 MB)</li>
+		<li><a href="details/04-gaudnek-front-signature.jpg">Front Signature</a> (4.4 MB)</li>
+		<li><a href="details/05-gaudnek-frame-top.jpg">Frame Top</a> (1.4 MB)</li>
+		<li><a href="details/06-gaudnek-frame-top-left.jpg">Frame Top Left</a> (2.8 MB)</li>
+		<li><a href="details/07-gaudnek-back.jpg">Back</a> (4 MB)</li>
+		<li><a href="details/08-gaudnek-back-top-left.jpg">Back Top Left</a> (3.8 MB)</li>
+		<li><a href="details/09-gaudnek-back-top-title.jpg">Back Top Title</a> (3 MB)</li>
+		<li><a href="details/10-gaudnek-back-top-right.jpg">Back Top Right</a> (3 MB)</li>
+		<li><a href="details/11-gaudnek-back-bottom-left.jpg">Back Bottom Left</a> (3.7 MB)</li>
+		<li><a href="details/12-gaudnek-back-bottom-right.jpg">Back Bottom Right</a> (3.2 MB)</li>
 	</ol>
 
 	<h2>References</h2>
@@ -49,7 +63,25 @@
 		<li><a href="https://en.wikipedia.org/wiki/Walter_Gaudnek">On Wikipedia</a></li>
 	</ol>
 
-	<script src="/js/modal.js"></script>
+
+	<script>
+		const detailsImages = [
+			{name:'Full',              url:'01-gaudnek-front.jpg',             size:'4.9', width:3884, height:2511},
+			{name:'Front Left',        url:'02-gaudnek-front-left.jpg',        size:'4.8', width:3024, height:4032},
+			{name:'Front Right',       url:'03-gaudnek-front-right.jpg',       size:'4.9', width:3009, height:3868},
+			{name:'Front Signature',   url:'04-gaudnek-front-signature.jpg',   size:'4.4', width:2935, height:3663},
+			{name:'Frame Top',         url:'05-gaudnek-frame-top.jpg',         size:'1.4', width:4016, height:911},
+			{name:'Frame Top Left',    url:'06-gaudnek-frame-top-left.jpg',    size:'2.8', width:2908, height:2427},
+			{name:'Back',              url:'07-gaudnek-back.jpg',              size:'4.0', width:3947, height:2527},
+			{name:'Back Top Left',     url:'08-gaudnek-back-top-left.jpg',     size:'3.8', width:3913, height:2392},
+			{name:'Back Top Title',    url:'09-gaudnek-back-top-title.jpg',    size:'3.0', width:2963, height:2166},
+			{name:'Back Top Right',    url:'10-gaudnek-back-top-right.jpg',    size:'3.0', width:2721, height:2987},
+			{name:'Back Bottom Left',  url:'11-gaudnek-back-bottom-left.jpg',  size:'3.7', width:2891, height:3998},
+			{name:'Back Bottom Right', url:'12-gaudnek-back-bottom-right.jpg', size:'3.2', width:2882, height:3911}
+		]
+	</script>
+
+<script src="/js/modal.js"></script>
 
 </body>
 </html>
