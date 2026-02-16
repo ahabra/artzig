@@ -1,12 +1,17 @@
 (function() {
 const public = {
-  toggleSidenav
+  // toggleSidenav
 }
 
 globalThis.app = {...globalThis.app, ...public}
 
 const RESPONSIVE_WIDTH = 600;
 const sidenav = document.querySelector("#sidenav");
+
+function setHamburgerOnClick() {
+  const ham = document.querySelector('.hamburger')
+  ham.onclick = toggleSidenav
+}
 
 function toggleSidenav() {
   if (isMobile()) {
@@ -46,5 +51,6 @@ function restoreIframe() {
 
 showLinksInIframe()
 restoreIframe()
+setHamburgerOnClick()
 
 })();
