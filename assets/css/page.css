@@ -8,10 +8,12 @@ body.artist {
 
   h1 {
     font-size: 2rem;
+    text-align: center;
   }
 
   h2 {
     font-size: 1.8rem;
+    margin: 1rem 0;
   }
 
   h3 {
@@ -32,4 +34,18 @@ body.artist {
     color: darkgreen;
   }
 
+  img.main-image {
+    padding-right: 1rem;
+    width: 800px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  body.artist {
+
+    img.main-image {
+      width: 100%;
+    }
+  }
 }
