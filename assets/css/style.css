@@ -100,7 +100,6 @@ header {
   display: flex;
   align-items: center;
   padding: 2rem;
-  border-bottom: 1px solid var(--color-header-border-bottom, gray);
   background-color: var(--color-header-bg, white);
 
   a {
