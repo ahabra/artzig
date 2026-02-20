@@ -3,8 +3,10 @@ function buildHtml(imgSrc, alt) {
   return `	
 <div id="modal-img" class="modal">
 	<div class="modal-content">
-    <span class="title">${alt}</span>
-		<span class="close">&times;</span>
+    <div class="modal-header">
+      <span class="title">${alt}</span>
+		  <span class="close">&times;</span>
+    </div>
 		<img src="${imgSrc}" alt="${alt}"/>
 	</div>
 </div>`
