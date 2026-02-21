@@ -13,14 +13,9 @@
   --color-fg-darker: #2e3135;
   --color-fg-darkest: black;
 
-
-
   --color-header-fg: var(--color-fg-lighter);
   --color-header-bg: var(--color-bg-dark);
   --color-header-border-bottom: var(--color-bg-light);
-
-  --color-menu-fg: var(--color-fg-lighter);
-  --color-menu-bg: var(--color-bg-darker);
 
   --color-hamburger-fg: var(--color-fg-lightest);
   --color-menu-hover-bg: var(--color-bg-dark);  
@@ -50,8 +45,8 @@ body {
   position: fixed;
   left: 1.2rem;
   top: 1rem;
-  background-color: var(--color-menu-bg, darkgray);
-  color: var(--color-hamburger-fg, white);
+  background-color: var(--color-bg-darker, darkgray);
+  color: var(--color-fg-lightest, white);
   border: none;
   cursor: pointer;
   font-size: 2.5rem;
@@ -63,7 +58,7 @@ body {
 nav {
   width: 20rem;
   height: 100vh;
-  background-color: var(--color-menu-bg, darkgray);
+  background-color: var(--color-bg-darker, darkgray);
   padding-top: 6rem;
   font-size: 1.6rem;
 

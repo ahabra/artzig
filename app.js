@@ -33,7 +33,6 @@ function showLinksInIframe() {
       session.setIframe(link.href)
     }
   })
-
 }
 
 function restoreIframe() {
