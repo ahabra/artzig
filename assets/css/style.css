@@ -69,7 +69,7 @@ nav {
   font-size: 1.6rem;
 
 
-  &.min {
+  &.active {
     width: 6rem;
   }
 
@@ -140,9 +140,11 @@ article {
     position: fixed;
     left: -25rem;
     top: 0;
+
+    &.active {
+      left: 0;
+      width: 20rem;
+    }
   }
 
-  nav.active {
-    left: 0;
-  }
 }
