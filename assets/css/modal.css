@@ -53,8 +53,7 @@
   padding-right: 1rem;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: var(--color-fg-dark, black);
   text-decoration: none;
   cursor: pointer;

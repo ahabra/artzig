@@ -103,7 +103,7 @@ header {
   background-color: var(--color-header-bg, white);
 
   a {
-    color: var(--color-header-fg, black);
+    color: var(--color-header-fg, white);
     text-decoration: none;
   }
 }
