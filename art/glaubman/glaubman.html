@@ -4,9 +4,92 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Edna (Levine) Glaubman</title>
-	<link rel="stylesheet" href="../../assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/artist-page.css" />
+	<link rel="stylesheet" href="/assets/css/modal.css" />
 </head>
-<body>
-  <h1>Edna (Levine) Glaubman</h1>
+
+<body class="artist">
+	<h1>Edna (Levine) Glaubman</h1>
+	<section class="bio">
+		<h2>Biography</h2>
+		<p>Life: 1919-1986</p>
+		<p>Born in Manhattan, NY.</p>
+		<p>
+		 	Studied at the Art Student's League in Woodstock, New York.
+			A graduate then faculty at the Parson School of Fine and Applied Arts in New York.
+			Lived in south Florida.
+		</p>
+
+		<ul>
+			<li><a href="https://www.askart.com/bio/Edna_Glaubman/11160095/Edna_Glaubman" target="_blank">More information</a></li>
+			<li><a href="https://www.miamiartguide.com/wdna-jazz-gallery-to-exhibit-works-from-the-edna-glaubman-family-collection/" target="_blank">Miami Art Guid</a></li>
+		</ul>
+	</section>
+
+
+	<h2>Art Work</h2>
+
+	<h3>Old Man</h3>
+	<img class="main-image" src="glaubman-oldman-md.jpg" alt="Old Man by Edna (Levine) Glaubman"></img>
+	Lithograph of 
+	<a href="https://www.geni.com/people/Jacob-Schneider/6000000059994201996" target="_blank">
+		Jacob Shmei Schneider</a>
+	according to Mr. Paul Alan Fine. 
+	Jacob lived 1851-1943.
+
+
+	<h4>Size</h4>
+	<table class="table">
+		<thead>
+			<th></th>
+			<th>Height</th>
+			<th>Width</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Inches</th>
+				<td class="number">13</td>
+				<td class="number">9</td>
+			</tr>
+			<tr>
+				<th>Cm</th>
+				<td class="number">33</td>
+				<td class="number">23</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h4>Detail Images</h4>
+
+	<table id="details" class="table">
+		<thead>
+			<tr>
+				<th></th>
+				<th class="image">Image</th>
+				<th>Size<br>(MB)</th>
+				<th>Width<br>pixels</th>
+				<th>Height<br>pixels</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+
+	<script>
+		const detailsImages = [
+			{name:'Full', url:'01-glaubman-oldman.jpg',                size:'7.1', width:3024, height:4032},
+			{name:'Face 1', url:'02-glaubman-oldman-face1.jpg',        size:'3.1', width:3024, height:4032},
+			{name:'Face 2', url:'03-glaubman-oldman-face2.jpg',        size:'3.1', width:3024, height:4032},
+			{name:'Back', url:'04-glaubman-oldman-back.jpg',           size:'2.9', width:3024, height:4032},
+			{name:'Hands', url:'05-glaubman-oldman-hands.jpg',         size:'3', width:2987, height:3348},
+			{name:'Signature', url:'06-glaubman-oldman-signature.jpg', size:'2', width:1195, height:2337},
+			{name:'Size', url:'07-glaubman-oldman-size.jpg',           size:'0.726', width:800, height:1078}
+		]
+	</script>
+
+<script src="/js/artist-page.js"></script>
+<script src="/js/modal.js"></script>
+
 </body>
 </html>
