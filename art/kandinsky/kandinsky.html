@@ -4,9 +4,84 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Wassily Kandinsky</title>
-	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/artist-page.css" />
+	<link rel="stylesheet" href="/assets/css/modal.css" />
 </head>
-<body>
-  <h1>Wassily Kandinsky</h1>
+
+<body class="artist">
+	<h1>Wassily Kandinsky</h1>
+	<section class="bio">
+		<h2>Biography</h2>
+		<p>Life: 1866-1944</p>
+		<p>Born in Moscow, and lived in Germany and France.</p>
+		<p>
+		 	A pioneer of abstract western art. Cofounded the artist group 
+			<a href="https://en.wikipedia.org/wiki/Der_Blaue_Reiter">Der Blaue Reiter/The Blue Rider</a> 
+		</p>
+
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Wassily_Kandinsky" target="_blank">On Wikipedia</a></li>
+			<li><a href="https://www.wassilykandinsky.net" target="_blank">More info</a></li>
+		</ul>
+	</section>
+
+
+	<h2>Art Work</h2>
+
+	<h3>Cover for The Blue Rider Almanac</h3>
+	<div>
+			<img class="main-image" src="kandinsky-md.jpg" alt="over of Der Blaue Reiter almanac by Wassily Kandinsky" width="600"></img>
+	</div>
+	<h4>Date</h4>
+	1911.
+	<p><a href="https://www.wassilykandinsky.net/work-18.php" target="_blank">Frame with glass cover.</a></p>
+
+	<h4>Size</h4>
+	<table class="table">
+		<thead>
+			<th></th>
+			<th>Height</th>
+			<th>Width</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Inches</th>
+				<td class="number">12</td>
+				<td class="number">9</td>
+			</tr>
+			<tr>
+				<th>Cm</th>
+				<td class="number">30</td>
+				<td class="number">23</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h4>Detail Images</h4>
+
+	<table id="details" class="table">
+		<thead>
+			<tr>
+				<th></th>
+				<th class="image">Image</th>
+				<th>Size<br>(MB)</th>
+				<th>Width<br>pixels</th>
+				<th>Height<br>pixels</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+
+	<script>
+		const detailsImages = [
+			{name:'Full', url:'kandinsky-full.jpg', size:'3.7', width:2905, height:3398}
+		]
+	</script>
+
+<script src="/js/artist-page.js"></script>
+<script src="/js/modal.js"></script>
+
 </body>
 </html>
