@@ -97,6 +97,10 @@ body.artist {
     }
   }
 
+  section.art-work {
+    margin-bottom: 5rem;
+  }
+
 }
 
 @media (max-width: 600px) {
