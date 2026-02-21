@@ -12,7 +12,7 @@ function createRow(index, {name, url, size, width, height}) {
   return `
   <tr>
     <th class="number">${index}</th>
-    <td><a href="details/${url}">${name}</a></td>
+    <td><a href="${url}">${name}</a></td>
     <td class="number">${size}</td>
     <td class="number">${width.toLocaleString('en-US')}</td>
     <td class="number">${height.toLocaleString('en-US')}</td>

@@ -4,9 +4,121 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Bernice Mann Einhorn</title>
-	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/artist-page.css" />
+	<link rel="stylesheet" href="/assets/css/modal.css" />
 </head>
-<body>
-  <h1>Bernice Mann Einhorn</h1>
+
+<body class="artist">
+	<h1>Bernice Mann Einhorn</h1>
+	<section class="bio">
+		<h2>Biography</h2>
+		<p>Life: 1923-2003</p>
+		<p>Lived in New York</p>
+		<p>
+			<a href="https://www.legacy.com/us/obituaries/newsday/name/bernice-einhorn-obituary?id=5073936">Obituary</a>
+		</p>
+	</section>
+
+
+	<h2>Art Work</h2>
+
+	<section class="art-work">
+		<h3>No Name 1</h3>
+		<div>
+				<img class="main-image" src="mann1/mann1-md.jpg" alt="Painting 1 by Bernice Mann Einhorn" width="800"></img>
+		</div>
+		
+		<h4>Size</h4>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Height</th>
+				<th>Width</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Inches</th>
+					<td class="number">24</td>
+					<td class="number">36</td>
+				</tr>
+				<tr>
+					<th>Cm</th>
+					<td class="number">60</td>
+					<td class="number">91</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Detail Images</h4>
+
+		<table id="details" class="table">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="image">Image</th>
+					<th>Size<br>(MB)</th>
+					<th>Width<br>pixels</th>
+					<th>Height<br>pixels</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+	<section class="art-work">
+
+		<h3>No Name 2</h3>
+		<div>
+				<img class="main-image" src="mann2/mann2-md.jpg" alt="Painting 2 by Bernice Mann Einhorn" width="800"></img>
+		</div>
+
+		<h4>Size</h4>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Height</th>
+				<th>Width</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Inches</th>
+					<td class="number">24</td>
+					<td class="number">36</td>
+				</tr>
+				<tr>
+					<th>Cm</th>
+					<td class="number">60</td>
+					<td class="number">91</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Detail Images</h4>
+
+		<table id="details" class="table">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="image">Image</th>
+					<th>Size<br>(MB)</th>
+					<th>Width<br>pixels</th>
+					<th>Height<br>pixels</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+
+	<script>
+		const detailsImages = [
+			{name:'Full', url:'mann1/mann1-full.jpg', size:'2.2', width:2962, height:1994}
+		]
+	</script>
+
+<script src="/js/artist-page.js"></script>
+<script src="/js/modal.js"></script>
+
 </body>
 </html>
