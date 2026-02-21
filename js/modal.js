@@ -47,7 +47,7 @@ function showModal(imgSrc, alt='') {
 
 
 function detailsModal() {
-  const links = document.querySelectorAll('#details a')
+  const links = document.querySelectorAll('table.details a')
   links.forEach(link => {
     const imgSrc = link.href
     const alt = link.innerText

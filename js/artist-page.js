@@ -1,8 +1,7 @@
 
-function showDetails() {
-  const tbody = document.querySelector('#details tbody')
+function showDetails(images, tbody) {
   let counter = 1
-  detailsImages.forEach(di=> {
+  images.forEach(di=> {
     const row = createRow(counter++, di)
     tbody.insertAdjacentHTML('beforeend', row)
   })
@@ -19,4 +18,4 @@ function createRow(index, {name, url, size, width, height}) {
   </tr>`
 }
 
-showDetails()
+showDetails(detailsImages, document.querySelector('#details tbody'))

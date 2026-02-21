@@ -52,7 +52,7 @@
 
 		<h4>Detail Images</h4>
 
-		<table id="details" class="table">
+		<table id="details" class="table details">
 			<thead>
 				<tr>
 					<th></th>
@@ -96,7 +96,7 @@
 
 		<h4>Detail Images</h4>
 
-		<table id="details" class="table">
+		<table id="details2" class="table details">
 			<thead>
 				<tr>
 					<th></th>
@@ -115,10 +115,19 @@
 		const detailsImages = [
 			{name:'Full', url:'mann1/mann1-full.jpg', size:'2.2', width:2962, height:1994}
 		]
+
+		const detailsImages2 = [
+			{name:'Full', url:'mann2/mann2-full.jpg', size:'2.3', width:2985, height:2046}
+		]
 	</script>
 
 <script src="/js/artist-page.js"></script>
+<script>
+	showDetails(detailsImages2, document.querySelector('#details2 tbody'))
+</script>
+
 <script src="/js/modal.js"></script>
+
 
 </body>
 </html>
