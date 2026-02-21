@@ -1,6 +1,7 @@
 import * as session from './js/session.js'
+import * as utils from './js/utils.js'
 
-const RESPONSIVE_WIDTH = 600;
+
 const sidenav = document.querySelector("#sidenav");
 
 function setHamburgerOnClick() {
@@ -9,7 +10,7 @@ function setHamburgerOnClick() {
 }
 
 function toggleSidenav() {
-  if (isMobile()) {
+  if (utils.isMobile()) {
     sidenav.classList.remove("min");
     sidenav.classList.toggle("active")
   } else {
@@ -18,9 +19,6 @@ function toggleSidenav() {
   }
 }
 
-function isMobile() {
-  return window.matchMedia(`only screen and (max-width: ${RESPONSIVE_WIDTH}px)`).matches
-}
 
 const iframe = document.getElementById('contentFrame')
 
