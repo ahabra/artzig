@@ -1,23 +1,5 @@
 import * as session from './js/session.js'
-import * as utils from './js/utils.js'
-
-
-const sidenav = document.querySelector("#sidenav");
-
-function setHamburgerOnClick() {
-  const ham = document.querySelector('.hamburger')
-  ham.onclick = toggleSidenav
-}
-
-function toggleSidenav() {
-  if (utils.isMobile()) {
-    sidenav.classList.remove("min");
-    sidenav.classList.toggle("active")
-  } else {
-    sidenav.classList.remove("active")
-    sidenav.classList.toggle("min")
-  }
-}
+import * as hamburger from './js/hamburger.js'
 
 
 const iframe = document.getElementById('contentFrame')
@@ -43,7 +25,7 @@ function restoreIframe() {
 function init() {
   showLinksInIframe()
   restoreIframe()
-  setHamburgerOnClick()
+  hamburger.defineClickHandler()
 }
 
 init()
