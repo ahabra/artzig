@@ -30,7 +30,7 @@
 
 	<section class="art-work">
 		<h3>Dream</h3>
-		<img class="main-image" src="gaudnek-md.jpg" alt="Dream by Walter Gaudnek" width="800"/>
+		<img class="main-image" src="dream/gaudnek-md.jpg" alt="Dream by Walter Gaudnek" width="800"/>
 		<h4>Date</h4>
 		1960s-1970s
 
@@ -60,7 +60,7 @@
 
 		<h4>Detail Images</h4>
 
-		<table id="details" class="table details">
+		<table id="details1" class="table details">
 			<thead>
 				<tr>
 					<th></th>
@@ -74,25 +74,26 @@
 		</table>
 	</section>
 
-
-	<script>
-		const detailsImages = [
-			{name:'Full, Hi Resolution', url:'details/01-gaudnek-front.jpg',             size:'4.9', width:3884, height:2511},
-			{name:'Front Left',          url:'details/02-gaudnek-front-left.jpg',        size:'4.8', width:3024, height:4032},
-			{name:'Front Right',         url:'details/03-gaudnek-front-right.jpg',       size:'4.9', width:3009, height:3868},
-			{name:'Front Signature',     url:'details/04-gaudnek-front-signature.jpg',   size:'4.4', width:2935, height:3663},
-			{name:'Frame Top',         	 url:'details/05-gaudnek-frame-top.jpg',         size:'1.4', width:4016, height:911},
-			{name:'Frame Top Left',      url:'details/06-gaudnek-frame-top-left.jpg',    size:'2.8', width:2908, height:2427},
-			{name:'Back',                url:'details/07-gaudnek-back.jpg',              size:'4.0', width:3947, height:2527},
-			{name:'Back Top Left',       url:'details/08-gaudnek-back-top-left.jpg',     size:'3.8', width:3913, height:2392},
-			{name:'Back Top Title',      url:'details/09-gaudnek-back-top-title.jpg',    size:'3.0', width:2963, height:2166},
-			{name:'Back Top Right',      url:'details/10-gaudnek-back-top-right.jpg',    size:'3.0', width:2721, height:2987},
-			{name:'Back Bottom Left',    url:'details/11-gaudnek-back-bottom-left.jpg',  size:'3.7', width:2891, height:3998},
-			{name:'Back Bottom Right',   url:'details/12-gaudnek-back-bottom-right.jpg', size:'3.2', width:2882, height:3911}
-		]
-	</script>
-
 <script src="/js/artist-page.js"></script>
+<script>
+	const details = [
+		{name:'Full, Hi Resolution', url:'dream/01-gaudnek-front.jpg',             size:'4.9', width:3884, height:2511},
+		{name:'Front Left',          url:'dream/02-gaudnek-front-left.jpg',        size:'4.8', width:3024, height:4032},
+		{name:'Front Right',         url:'dream/03-gaudnek-front-right.jpg',       size:'4.9', width:3009, height:3868},
+		{name:'Front Signature',     url:'dream/04-gaudnek-front-signature.jpg',   size:'4.4', width:2935, height:3663},
+		{name:'Frame Top',         	 url:'dream/05-gaudnek-frame-top.jpg',         size:'1.4', width:4016, height:911},
+		{name:'Frame Top Left',      url:'dream/06-gaudnek-frame-top-left.jpg',    size:'2.8', width:2908, height:2427},
+		{name:'Back',                url:'dream/07-gaudnek-back.jpg',              size:'4.0', width:3947, height:2527},
+		{name:'Back Top Left',       url:'dream/08-gaudnek-back-top-left.jpg',     size:'3.8', width:3913, height:2392},
+		{name:'Back Top Title',      url:'dream/09-gaudnek-back-top-title.jpg',    size:'3.0', width:2963, height:2166},
+		{name:'Back Top Right',      url:'dream/10-gaudnek-back-top-right.jpg',    size:'3.0', width:2721, height:2987},
+		{name:'Back Bottom Left',    url:'dream/11-gaudnek-back-bottom-left.jpg',  size:'3.7', width:2891, height:3998},
+		{name:'Back Bottom Right',   url:'dream/12-gaudnek-back-bottom-right.jpg', size:'3.2', width:2882, height:3911}
+	]
+	const allDetails = [ {tableId: 'details1', details} ]
+	globalThis.app.listAllDetails(allDetails)
+</script>
+
 <script src="/js/modal.js"></script>
 
 </body>

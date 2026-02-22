@@ -1,7 +1,20 @@
+(function () {
 
-function showDetails(images, tbody) {
+globalThis.app = {
+  listAllDetails
+}
+
+function listAllDetails(allDetails) {
+  allDetails.forEach( ({tableId, details}) => {
+    showSingleArtDetails(tableId, details)
+  })
+}
+
+function showSingleArtDetails(tableId, details) {
+  const tbody = document.querySelector(`#${tableId} tbody`)
+
   let counter = 1
-  images.forEach(di=> {
+  details.forEach(di=> {
     const row = createRow(counter++, di)
     tbody.insertAdjacentHTML('beforeend', row)
   })
@@ -18,4 +31,4 @@ function createRow(index, {name, url, size, width, height}) {
   </tr>`
 }
 
-showDetails(detailsImages, document.querySelector('#details tbody'))
+})()
