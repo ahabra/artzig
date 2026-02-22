@@ -4,9 +4,177 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Taro Yamamoto</title>
-	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/artist-page.css" />
+	<link rel="stylesheet" href="/assets/css/modal.css" />
 </head>
-<body>
-  <h1>Taro Yamamoto</h1>
+
+<body class="artist">
+	<h1>Taro Yamamoto</h1>
+	<section class="bio">
+		<h2>Biography</h2>
+		<p>Life: 1923-2003</p>
+		<p>Lived in New York</p>
+		<p>
+			<a href="https://www.legacy.com/us/obituaries/newsday/name/bernice-einhorn-obituary?id=5073936">Obituary</a>
+		</p>
+	</section>
+
+
+	<h2>Art Work</h2>
+
+	<section class="art-work">
+		<h3>No Name 1</h3>
+		<div>
+				<img class="main-image" src="art1/yamamoto1-md.jpg" alt="Painting 1 by Taro Yamamoto" width="800"></img>
+		</div>
+		
+		<h4>Size</h4>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Height</th>
+				<th>Width</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Inches</th>
+					<td class="number">24</td>
+					<td class="number">36</td>
+				</tr>
+				<tr>
+					<th>Cm</th>
+					<td class="number">60</td>
+					<td class="number">91</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Detail Images</h4>
+
+		<table id="details1" class="table details">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="image">Image</th>
+					<th>Size<br>(MB)</th>
+					<th>Width<br>pixels</th>
+					<th>Height<br>pixels</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+	<section class="art-work">
+		<h3>No Name 2</h3>
+		<div>
+				<img class="main-image" src="art2/yamamoto2-md.jpg" alt="Painting 2 by Taro Yamamoto" width="800"></img>
+		</div>
+
+		<h4>Size</h4>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Height</th>
+				<th>Width</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Inches</th>
+					<td class="number">24</td>
+					<td class="number">36</td>
+				</tr>
+				<tr>
+					<th>Cm</th>
+					<td class="number">60</td>
+					<td class="number">91</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Detail Images</h4>
+
+		<table id="details2" class="table details">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="image">Image</th>
+					<th>Size<br>(MB)</th>
+					<th>Width<br>pixels</th>
+					<th>Height<br>pixels</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+	<section class="art-work">
+		<h3>No Name 3</h3>
+		<div>
+				<img class="main-image" src="art3/yamamoto3-md.jpg" alt="Painting 3 by Taro Yamamoto" width="800"></img>
+		</div>
+
+		<h4>Size</h4>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Height</th>
+				<th>Width</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Inches</th>
+					<td class="number">24</td>
+					<td class="number">36</td>
+				</tr>
+				<tr>
+					<th>Cm</th>
+					<td class="number">60</td>
+					<td class="number">91</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Detail Images</h4>
+
+		<table id="details3" class="table details">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="image">Image</th>
+					<th>Size<br>(MB)</th>
+					<th>Width<br>pixels</th>
+					<th>Height<br>pixels</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+
+<script src="/js/artist-page.js"></script>
+<script>
+	const details1 = [
+		{name:'Full', url:'art1/01-full.jpg', size:'2.2', width:2962, height:1994}
+	]
+
+	const details2 = [
+		{name:'Full', url:'art2/yamamoto2-full.jpg', size:'2.3', width:2985, height:2046}
+	]
+	const details3 = [
+		{name:'Full', url:'art3/yamamoto3-full.jpg', size:'2.3', width:2985, height:2046}
+	]
+
+	const allDetails = [
+		{tableId: 'details1', details: details1},
+		{tableId: 'details2', details: details2},
+		{tableId: 'details3', details: details3}
+	]
+	globalThis.app.listAllDetails(allDetails)
+</script>
+<script src="/js/modal.js"></script>
+
+
 </body>
 </html>
