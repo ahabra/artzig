@@ -32,7 +32,7 @@
 	<section class="art-work">
 		<h3>Cover for The Blue Rider Almanac</h3>
 		<div>
-				<img class="main-image" src="kandinsky-md.jpg" alt="over of Der Blaue Reiter almanac by Wassily Kandinsky" width="600"></img>
+				<img class="main-image" src="blue-rider/kandinsky-md.jpg" alt="over of Der Blaue Reiter almanac by Wassily Kandinsky" width="600"></img>
 		</div>
 		<h4>Date</h4>
 		1911.
@@ -75,13 +75,15 @@
 		</table>
 	</section>
 
-	<script>
-		const detailsImages = [
-			{name:'Full', url:'details/kandinsky-full.jpg', size:'3.7', width:2905, height:3398}
-		]
-	</script>
-
 <script src="/js/artist-page.js"></script>
+<script>
+	const details = [
+		{name:'Full', url:'blue-rider/kandinsky-full.jpg', size:'3.7', width:2905, height:3398}
+	]
+	const allDetails = [ {tableId: 'details', details} ]
+	globalThis.app.listAllDetails(allDetails)
+</script>
+
 <script src="/js/modal.js"></script>
 
 </body>

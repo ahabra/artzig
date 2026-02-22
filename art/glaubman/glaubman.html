@@ -33,7 +33,7 @@
 	<section class="art-work">
 		<h3>Old Man</h3>
 		<div>
-				<img class="main-image" src="glaubman-oldman-md.jpg" alt="Old Man by Edna (Levine) Glaubman" width="600"></img>
+				<img class="main-image" src="oldman/glaubman-oldman-md.jpg" alt="Old Man by Edna (Levine) Glaubman" width="600"></img>
 		</div>
 		<p>
 			Lithograph of <a href="https://www.geni.com/people/Jacob-Schneider/6000000059994201996" 
@@ -81,19 +81,21 @@
 		</table>
 	</section>
 
-	<script>
-		const detailsImages = [
-			{name:'Full', url:'details/01-glaubman-oldman.jpg',                size:'7.1', width:3024, height:4032},
-			{name:'Face 1', url:'details/02-glaubman-oldman-face1.jpg',        size:'3.1', width:3024, height:4032},
-			{name:'Face 2', url:'details/03-glaubman-oldman-face2.jpg',        size:'3.1', width:3024, height:4032},
-			{name:'Back', url:'details/04-glaubman-oldman-back.jpg',           size:'2.9', width:3024, height:4032},
-			{name:'Hands', url:'details/05-glaubman-oldman-hands.jpg',         size:'3',   width:2987, height:3348},
-			{name:'Signature', url:'details/06-glaubman-oldman-signature.jpg', size:'2',   width:1195, height:2337},
-			{name:'Size', url:'details/07-glaubman-oldman-size.jpg',           size:'0.726', width:800, height:1078}
-		]
-	</script>
-
 <script src="/js/artist-page.js"></script>
+<script>
+	const details = [
+		{name:'Full', url:'oldman/01-glaubman-oldman.jpg',                size:'7.1', width:3024, height:4032},
+		{name:'Face 1', url:'oldman/02-glaubman-oldman-face1.jpg',        size:'3.1', width:3024, height:4032},
+		{name:'Face 2', url:'oldman/03-glaubman-oldman-face2.jpg',        size:'3.1', width:3024, height:4032},
+		{name:'Back', url:'oldman/04-glaubman-oldman-back.jpg',           size:'2.9', width:3024, height:4032},
+		{name:'Hands', url:'oldman/05-glaubman-oldman-hands.jpg',         size:'3',   width:2987, height:3348},
+		{name:'Signature', url:'oldman/06-glaubman-oldman-signature.jpg', size:'2',   width:1195, height:2337},
+		{name:'Size', url:'oldman/07-glaubman-oldman-size.jpg',           size:'0.726', width:800, height:1078}
+	]
+	const allDetails = [ {tableId: 'details', details}	]
+	globalThis.app.listAllDetails(allDetails)
+</script>
+
 <script src="/js/modal.js"></script>
 
 </body>
