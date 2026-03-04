@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Nadlbach</title>
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/artist-page.css" />
+	<link rel="stylesheet" href="/assets/css/modal.css" />
+</head>
+
+<body class="artist">
+	<h1>Nadlbach</h1>
+	<section class="bio">
+		<h2>Biography</h2>
+		<p>
+			Unable to clearly read the signature on this art, it can be <code>Nadlback</code> or <code>Nadlboch</code>.
+			In either case, I cannot find a recognized artist with this name.
+		</p>
+	</section>
+
+
+	<h2>Art Work</h2>
+
+	<section class="art-work">
+		<h3>Woman's Face</h3>
+		<img class="main-image" src="art1/01-nadlbach-md.jpg" alt="Face portrait by Nadlbach" width="800"/>
+
+		<h4>Size</h4>
+		<table class="table">
+			<thead>
+				<th></th>
+				<th>Height</th>
+				<th>Width</th>
+				<th>Thickness</th>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Inches</th>
+					<td class="number">16</td>
+					<td class="number">12</td>
+					<td class="number"></td>
+				</tr>
+				<tr>
+					<th>Cm</th>
+					<td class="number">41</td>
+					<td class="number">30</td>
+					<td class="number"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h4>Detail Images</h4>
+
+		<table id="details" class="table details">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="image">Image</th>
+					<th>Size<br>(MB)</th>
+					<th>Width<br>pixels</th>
+					<th>Height<br>pixels</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+<script src="/js/artist-page.js"></script>
+<script>
+	const details = [
+		{name:'Full',     url:'art1/02-nadlbach-full.jpg',     size:'', width:0, height:0},
+		{name:'Face',     url:'art1/03-nadlbach-face.jpg',     size:'', width:0, height:0},
+		{name:'Back',     url:'art1/04-nadlbach-back.jpg',     size:'', width:0, height:0},
+		{name:'Back top', url:'art1/05-nadlbach-back-top.jpg', size:'', width:0, height:0},
+		{name:'Signature',url:'art1/06-nadlbach-signature.jpg',size:'', width:0, height:0}
+	]
+	const allDetails = [ {tableId: 'details', details} ]
+	globalThis.app.listAllDetails(allDetails)
+</script>
+
+<script src="/js/modal.js"></script>
+
+</body>
+</html>
