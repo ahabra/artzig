@@ -123,6 +123,12 @@ article {
   }
 }
 
+.email {
+  color: green;
+  margin: 0 0.5rem;
+}
+
+
 @media (max-width: 600px) {
   .hamburger {
     background-color: var(--color-header-bg, white);
