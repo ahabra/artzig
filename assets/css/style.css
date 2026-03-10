@@ -58,6 +58,11 @@ body {
     transform: rotate(90deg);
   }
 
+  &:hover {
+    background-color: var(--color-menu-hover-bg, gray);
+    border-radius: 0.5rem;
+  }
+
 }
 
 
@@ -106,7 +111,14 @@ header {
   a {
     color: var(--color-header-fg, white);
     text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: var(--color-bg-darker, black);
+    }
   }
+
 }
 
 article {
@@ -126,6 +138,7 @@ article {
 .email {
   color: green;
   margin: 0 0.5rem;
+  font-family: arial;
 }
 
 
