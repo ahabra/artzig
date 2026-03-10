@@ -103,6 +103,10 @@ body.artist {
 
 }
 
+body.welcome {
+  max-width: 800px;
+}
+
 @media (max-width: 600px) {
   body.artist {
 
